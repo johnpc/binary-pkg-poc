@@ -1,0 +1,31 @@
+{
+  "name": "jpc-tmp-cli-example",
+  "version": "7.6.19",
+  "description": "An example package for amplify-cli binary installation",
+  "main": "binary.js",
+  "bin": {
+    "jpc-tmp-cli-example": "./run.js"
+  },
+  "scripts": {
+    "postinstall": "node ./install.js",
+    "run": "node ./run.js",
+    "fmt": "prettier --write **/*.js",
+    "fmt:check": "prettier --check **/*.js"
+  },
+  "binaryLocation": "https://d3658tpz5zmm4p.cloudfront.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aws-amplify/amplify-cli"
+  },
+  "author": "John Corser",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "console.table": "^0.10.0",
+    "rimraf": "^3.0.2",
+    "tar": "^6.1.11"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
